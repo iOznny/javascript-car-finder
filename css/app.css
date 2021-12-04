@@ -65,6 +65,7 @@ form {
     color: white;
     font-size: 2rem;
 }
+
 .error {
     background-color: red;
 }
@@ -77,6 +78,7 @@ form {
     margin: 2rem auto;
     text-decoration: none;
 }
+
 .sitio-web:hover {
     color: white;
 }
