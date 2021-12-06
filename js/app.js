@@ -115,14 +115,32 @@ function fillSelectYears() {
 
 // Filters wanted vehicles
 function filterVehicle() {
-    const reponse = vehicles.filter( filterBrand )
+    const response = vehicles.filter( filterBrand )
         .filter(filterYear)
         .filter(filterMin)
         .filter(filterMax)
         .filter(filterDoors)
         .filter(filterTransmission)
         .filter(filterColor)
-    showVehicles(reponse);
+        
+
+    // Checking length vehicles
+    if (response.length) {        
+        showVehicles(response);
+    } else {
+        notFound();
+    }
+}
+
+// Not found results
+function notFound() {
+    // Clean html
+    clearHTML();
+
+    const noResponse = document.createElement('div');
+    noResponse.classList.add('alerta', 'error');
+    noResponse.textContent = 'Sin resultados, intenta con otros términos de búsqueda';
+    res.appendChild(noResponse);
 }
 
 function filterBrand(vehicle) {
