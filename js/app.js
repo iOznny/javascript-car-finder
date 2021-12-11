@@ -23,7 +23,7 @@ const data = {
     doors: '',
     transmission: '',
     color: '',
-}
+};
 
 // Events
 document.addEventListener('DOMContentLoaded', () => {
@@ -80,13 +80,13 @@ function showVehicles(vehicles) {
         const vHTML = document.createElement('p');
 
         vHTML.textContent = `
-            Marca ${ brand } /
-            Mode ${ model } / 
-            Año ${ year } /
-            Precio ${ price } /
-            Puertas ${ doors } / 
-            Color ${ color } /
-            Transmisión ${ transmission } 
+            Marca: ${ brand } /
+            Mode: ${ model } / 
+            Año: ${ year } /
+            Precio: ${ price } /
+            Puertas: ${ doors } / 
+            Color: ${ color } /
+            Transmisión: ${ transmission } 
         `;
 
         // Insert in html
