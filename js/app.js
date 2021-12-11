@@ -121,8 +121,7 @@ function filterVehicle() {
         .filter(filterMax)
         .filter(filterDoors)
         .filter(filterTransmission)
-        .filter(filterColor)
-        
+        .filter(filterColor);        
 
     // Checking length vehicles
     if (response.length) {        
